@@ -1,0 +1,18 @@
+{
+  "block.cityblocks.road_blank": "Blank Road",
+  "block.cityblocks.road_solid": "Solid Road",
+  "block.cityblocks.road_broken": "Broken Road",
+  "block.cityblocks.road_blank_slab": "Blank Road Slab",
+  "block.cityblocks.road_solid_slab": "Solid Road Slab",
+  "block.cityblocks.road_broken_slab": "Broken Road Slab",
+  "block.cityblocks.sandbag": "Sandbags",
+  "block.cityblocks.sandbag_slab": "Sandbag Slab",
+  "block.cityblocks.stop_sign": "Stop Sign",
+  "block.cityblocks.road_barrier": "Road Barrier",
+  "block.cityblocks.pole_barrier": "Pole Barrier",
+  "block.cityblocks.steel_pole_barrier": "Steel Pole Barrier",
+  "block.cityblocks.pole_barrier_unlit": "Unlit Pole Barrier",
+  "block.cityblocks.concrete_barrier": "Concrete Barrier",
+  "block.cityblocks.striped_concrete_barrier": "Striped Concrete Barrier",
+  "itemGroup.cityblocksTab": "Hallzmine's City Blocks"
+}
