@@ -1,5 +1,7 @@
 package ga.hallzmine.cityblocks;
 
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +35,7 @@ public class CityBlocksMod
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(RegistryHandler.POLE_BARRIER.get(), RenderType.getTranslucent());
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
