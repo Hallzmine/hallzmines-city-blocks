@@ -14,5 +14,9 @@
   "block.cityblocks.pole_barrier_unlit": "Unlit Pole Barrier",
   "block.cityblocks.concrete_barrier": "Concrete Barrier",
   "block.cityblocks.striped_concrete_barrier": "Striped Concrete Barrier",
+  "block.cityblocks.vending_machine": "Vending Machine",
+  "block.cityblocks.steel_pole_barrier_slab": "Slab Embedded Steel Pole Barrier",
+  "block.cityblocks.concrete_barrier_slab": "Slab Embedded Concrete Barrier",
+  "block.cityblocks.striped_concrete_barrier_slab": "Slab Embedded Striped Concrete Barrier",
   "itemGroup.cityblocksTab": "Hallzmine's City Blocks"
 }

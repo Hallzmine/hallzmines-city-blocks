@@ -44,7 +44,7 @@ public class RegistryHandler {
     public static final RegistryObject<Block> ROAD_SOLID_SLAB = BLOCKS.register("road_solid_slab", () -> new OrientableSlabBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f)));
     public static final RegistryObject<Item> ROAD_SOLID_SLAB_ITEM = ITEMS.register("road_solid_slab", () -> new BlockItemBase(ROAD_SOLID_SLAB.get()));
 
-    public static final RegistryObject<Block> STOP_SIGN = BLOCKS.register("stop_sign", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
+    public static final RegistryObject<Block> STOP_SIGN = BLOCKS.register("stop_sign", () -> new StopSignBlock());
     public static final RegistryObject<Item> STOP_SIGN_ITEM = ITEMS.register("stop_sign", () -> new BlockItemBase(STOP_SIGN.get()));
 
     public static final RegistryObject<Block> ROAD_BARRIER = BLOCKS.register("road_barrier", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
@@ -56,6 +56,9 @@ public class RegistryHandler {
     public static final RegistryObject<Block> STEEL_POLE_BARRIER = BLOCKS.register("steel_pole_barrier", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
     public static final RegistryObject<Item> STEEL_POLE_BARRIER_ITEM = ITEMS.register("steel_pole_barrier", () -> new BlockItemBase(STEEL_POLE_BARRIER.get()));
 
+    public static final RegistryObject<Block> STEEL_POLE_BARRIER_SLAB = BLOCKS.register("steel_pole_barrier_slab", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
+    public static final RegistryObject<Item> STEEL_POLE_BARRIER_SLAB_ITEM = ITEMS.register("steel_pole_barrier_slab", () -> new BlockItemBase(STEEL_POLE_BARRIER_SLAB.get()));
+
     public static final RegistryObject<Block> POLE_BARRIER_UNLIT = BLOCKS.register("pole_barrier_unlit", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
     public static final RegistryObject<Item> POLE_BARRIER_UNLIT_ITEM = ITEMS.register("pole_barrier_unlit", () -> new BlockItemBase(POLE_BARRIER_UNLIT.get()));
 
@@ -64,4 +67,13 @@ public class RegistryHandler {
 
     public static final RegistryObject<Block> STRIPED_CONCRETE_BARRIER = BLOCKS.register("striped_concrete_barrier", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
     public static final RegistryObject<Item> STRIPED_CONCRETE_BARRIER_ITEM = ITEMS.register("striped_concrete_barrier", () -> new BlockItemBase(STRIPED_CONCRETE_BARRIER.get()));
+
+    public static final RegistryObject<Block> CONCRETE_BARRIER_SLAB = BLOCKS.register("concrete_barrier_slab", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
+    public static final RegistryObject<Item> CONCRETE_BARRIER_SLAB_ITEM = ITEMS.register("concrete_barrier_slab", () -> new BlockItemBase(CONCRETE_BARRIER_SLAB.get()));
+
+    public static final RegistryObject<Block> STRIPED_CONCRETE_BARRIER_SLAB = BLOCKS.register("striped_concrete_barrier_slab", () -> new OrientableBlockBase(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid()));
+    public static final RegistryObject<Item> STRIPED_CONCRETE_BARRIER_SLAB_ITEM = ITEMS.register("striped_concrete_barrier_slab", () -> new BlockItemBase(STRIPED_CONCRETE_BARRIER_SLAB.get()));
+
+    public static final RegistryObject<Block> VENDING_MACHINE = BLOCKS.register("vending_machine", () -> new VendingMachineBlock());
+    public static final RegistryObject<Item> VENDING_MACHINE_ITEM = ITEMS.register("vending_machine", () -> new BlockItemBase(VENDING_MACHINE.get()));
 }
