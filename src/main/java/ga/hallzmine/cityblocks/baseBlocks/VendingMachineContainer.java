@@ -1,11 +1,8 @@
-package ga.hallzmine.cityblocks.blocks;
+package ga.hallzmine.cityblocks.baseBlocks;
 
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.ContainerType;
-
-import javax.annotation.Nullable;
 
 public class VendingMachineContainer extends Container {
 

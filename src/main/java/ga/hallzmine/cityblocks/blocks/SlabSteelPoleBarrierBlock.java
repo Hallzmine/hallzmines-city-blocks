@@ -19,20 +19,18 @@ import java.util.stream.Stream;
 
 import static net.minecraft.block.HorizontalBlock.HORIZONTAL_FACING;
 
-public class StopSignBlock extends OrientableBlockBase {
+public class SlabSteelPoleBarrierBlock extends OrientableBlockBase {
 
 
 
-
-    public StopSignBlock() {
+    public SlabSteelPoleBarrierBlock() {
         super(Block.Properties.create(Material.ROCK).hardnessAndResistance(5.0f, 5.0f).notSolid());
         runCalculation(Stream.of(
-                Block.makeCuboidShape(7, -16, 7, 9, -10, 9),
-                Block.makeCuboidShape(7.5, -10, 7.5, 8.5, 31, 8.5),
-                Block.makeCuboidShape(0, 20.68629, 7.25, 16, 27.31371, 7.5),
-                Block.makeCuboidShape(0, 20.68629, 7.2, 16, 27.31371, 7.55),
-                Block.makeCuboidShape(4.68629, 16, 7.26, 11.31371, 32, 7.51),
-                Block.makeCuboidShape(4.68629, 16, 7.27, 11.31371, 32, 7.52)
+                Block.makeCuboidShape(0, 0, 0, 16, 8, 16),
+                Block.makeCuboidShape(1, 8, 7, 3, 21, 9),
+                Block.makeCuboidShape(13, 8, 7, 15, 21, 9),
+                Block.makeCuboidShape(0, 17.3, 6, 16, 20.3, 7),
+                Block.makeCuboidShape(0, 13.3, 6, 16, 16.3, 7)
         ).reduce((v1, v2) -> {return VoxelShapes.combineAndSimplify(v1, v2, IBooleanFunction.OR);}).get());
     }
     protected static final Map<Direction, VoxelShape> SHAPES = new HashMap<Direction, VoxelShape>();
@@ -54,8 +52,6 @@ public class StopSignBlock extends OrientableBlockBase {
             calculateShapes(direction, shape);
         }
     }
-
-
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         return SHAPES.get(state.get(HORIZONTAL_FACING));

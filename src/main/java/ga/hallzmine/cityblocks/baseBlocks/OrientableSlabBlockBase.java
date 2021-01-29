@@ -1,4 +1,4 @@
-package ga.hallzmine.cityblocks.blocks;
+package ga.hallzmine.cityblocks.baseBlocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;

@@ -3,7 +3,7 @@
 	"texture_size": [64, 64],
 	"textures": {
 		"0": "cityblocks:block/stop_sign",
-		"1": "block/bricks",
+		"1": "cityblocks:block/bricks",
 		"particle": "cityblocks:block/stop_sign"
 	},
 	"elements": [
@@ -90,11 +90,11 @@
 			}
 		}
 	],
-	"groups": [0, 1,
+	"groups": [
 		{
-			"name": "octagon",
+			"name": "VoxelShapes",
 			"origin": [8, 8, 8],
-			"children": [2, 3, 4, 5]
+			"children": [0, 1, 2, 3, 4, 5]
 		}
 	]
 }
